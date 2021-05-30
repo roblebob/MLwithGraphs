@@ -28,9 +28,12 @@ def node_centrality_trail(iterations=30):
 
     for _ in np.arange(0, iterations):
         e = (A @ e.T)
+        e = e / e.max()
+    else:
+        pass
 
     return e
 
 
 if __name__ == '__main__':
-    print(node_centrality_trail(5))
+    print(node_centrality_trail(100))
