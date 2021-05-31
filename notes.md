@@ -108,25 +108,6 @@ ___infer:___ &emsp; $\mathcal{E} \setminus \mathcal{E}_{train}$
 
 
 
-_  |Ac |Al |Ba |Bi |Ca |Gi |Gu |La |Me |Pa |Pe |Ri |Sa |St |To
----|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---
-Ac | . | . | . | . | . | . | . | . | 1 | . | . | . | . | . | .  
-Al | . | . | . | . | . | 1 | . | . | . | . | . | . | . | . | .
-Ba | . | . | . | . | . | . | . | . | . | . | . | . | . | . | .
-Bi | . | . | . | . | . | . | . | . | . | . | . | . | . | . | .
-Ca | . | . | . | . | . | . | . | . | . | . | . | . | . | . | .
-Gi | . | 1 | . | . | . | . | . | . | . | . | . | . | . | . | .
-Gu | . | . | . | . | . | . | . | . | . | . | . | . | . | . | .
-La | . | . | . | . | . | . | . | . | . | . | . | . | . | . | .
-Me | 1 | . | . | . | . | . | . | . | . | . | . | . | . | . | .
-Pa | . | . | . | . | . | . | . | . | . | . | . | . | . | . | .
-Pe | . | . | . | . | . | . | . | . | . | . | . | . | . | . | .
-Ri | . | . | . | . | . | . | . | . | . | . | . | . | . | . | .
-Sa | . | . | . | . | . | . | . | . | . | . | . | . | . | . | .
-St | . | . | . | . | . | . | . | . | . | . | . | . | . | . | .
-To | . | . | . | . | . | . | . | . | . | . | . | . | . | . | .
-
-
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -147,6 +128,8 @@ $\displaystyle d_u = \sum_{v \in \mathcal{V}}\mathbf{A}[u,v]$
 _eigenvector centrality_  
 $\displaystyle e_{u} =  \frac{1}{\lambda} \sum_{v \in \mathcal{V}} \mathbf{A}[u,v] \ e_v \qquad \forall u \in \mathcal{V}$
 
-$\lambda \mathbf{e} = \mathbf{A} \mathbf{e}$
+$\lambda \mathbf{e} = \mathbf{A} \mathbf{e}$   
 
-assuming: &ensp; $e_u \geq 0 \implies \mathbf{e}$ &ensp;  that eigenvector    
+assuming: &ensp; $\forall u \in \mathcal{V}: e_u \geq 0 \implies \mathbf{e}$ is  that eigenvector with largest eigenvalue $\lambda$    
+
++ ranks the likelihood that a node is visited on a random walk of infinite length on the graph
