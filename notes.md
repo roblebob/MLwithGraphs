@@ -133,3 +133,9 @@ $\lambda \mathbf{e} = \mathbf{A} \mathbf{e}$
 assuming: &ensp; $\forall u \in \mathcal{V}: e_u \geq 0 \implies \mathbf{e}$ is  that eigenvector with largest eigenvalue $\lambda$    
 
 + ranks the likelihood that a node is visited on a random walk of infinite length on the graph
+
+<br>
+
+#### Clustering Coefficient
+
+$\displaystyle c_u = \frac{\left|  (v_1,v_2) \in \mathcal{E} \ : \ v_1, v_2 \in \mathcal{N}(u)  \right|}{ \binom{d_u}{2} }$
