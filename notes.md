@@ -105,7 +105,8 @@ ___infer:___ &emsp; $\mathcal{E} \setminus \mathcal{E}_{train}$
 ## Example Medici
 
 <img src="https://www.researchgate.net/profile/Stephen-Borgatti/publication/222538101/figure/fig4/AS:305206182072325@1449778232432/Padgetts-data-on-marriage-ties-among-Renaissance-Florentine-families-isolate-removed.png" width=666>
-
+<br><br><br>
+NOTE!!! -> edge between STROZZI and PERUZZI is hidden by the name STROZZI
 
 
 
@@ -139,3 +140,11 @@ assuming: &ensp; $\forall u \in \mathcal{V}: e_u \geq 0 \implies \mathbf{e}$ is 
 #### Clustering Coefficient
 
 $\displaystyle c_u = \frac{\left|  (v_1,v_2) \in \mathcal{E} \ : \ v_1, v_2 \in \mathcal{N}(u)  \right|}{ \binom{d_u}{2} }$
+
+
+
+
+
+
+
+last --> page 18 (2.2.2 Global overlap measures)
